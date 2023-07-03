@@ -16,3 +16,10 @@ spec:
     - containerPort: 80
       protocol: TCP
     workingDir: /tmp
+    resources:
+      requests:
+        cpu: 50m
+        memory: 8Mi
+      limits:
+        cpu: 200m
+        memory: 64Mi
